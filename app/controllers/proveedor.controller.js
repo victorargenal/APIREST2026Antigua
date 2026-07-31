@@ -29,6 +29,7 @@ exports.create= (req,res) =>{
     });
 };
 
+
 exports.findAll = (req,res) =>{
     const nombre=req.query.nombre;
     var condition = nombre ? { nombre: { [Op.ilike]: '%${nombre}%'} } : null;

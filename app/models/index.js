@@ -24,6 +24,7 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
     acquire: dbConfig.pool.acquire, // Tiempo máximo para obtener una conexión antes de lanzar error
     idle: dbConfig.pool.idle      // Tiempo que una conexión puede estar inactiva antes de ser liberada
   }
+  
 });
 
 // Creamos un objeto `db` que exportaremos para acceder a Sequelize y los modelos desde otras partes del proyecto
